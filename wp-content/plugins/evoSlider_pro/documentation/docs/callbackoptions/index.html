@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Callback Options</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Callback Options (Pro)</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Callback Options</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                
+                <p>With callback options, you can run function before and after slide transition effect, for example:</p>
+                
+                <pre>
+var myEvoSlider = $("#mySlider").evoSlider({
+    before: function(){
+        alert( this.getIndex() );
+    },
+    after: function(){
+        alert( this.getIndex() );
+    }
+});
+                </pre>
+                
+                <p>You can access the Evo Slider API from the inside of the callback function using the <b>this</b> keyword.</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

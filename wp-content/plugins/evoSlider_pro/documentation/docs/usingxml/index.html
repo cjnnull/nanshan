@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using XML</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using XML</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using XML</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>
+            Using XML allows you to define a slider of images or videos outside of your markup for easy updates. 
+            To use XML to define the images in your Evo Slider follow these steps:
+            </p>
+            
+            <ol>
+                <li>Create a new HTML file.</li>
+                <li>Copy the default skin folder into the same directory.</li>
+                <li>Import Evo Slider stylesheet and the default skin into HTML document:
+                <pre>
+&lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+&lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+                </pre>
+                </li>
+                <li>Import the latest version of jQuery and the Evo Slider plugin file:
+                <pre>
+&lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="scripts/jquery.evoslider.js"&gt;&lt;/script&gt;
+                </pre>
+                </li>
+                <li>Add the following script to the head of your document to initialize the Evo Slider with 
+                the content of your XML file when the file is ready:
+                <pre>
+&lt;script type="text/javascript"&gt;
+    $(document).ready(function(){
+        var myPlugin = $("#mySlider").evoSlider({
+            external: {
+                data: "xml",
+                url: "evoslider.xml"
+                }                
+            });                
+    });    
+&lt;/script&gt;
+                </pre>
+                
+                <p>This code assumes that your XML file, which you'll create shortly will be saved as 'evoslider.xml'.
+                </li>
+                
+                <li>Add the following markup to your html to place the Evo Slider in your document:
+                <pre>
+&lt;div id="mySlider" class="evoslider default"&gt;
+&lt;/div&gt;
+                </pre>
+                </li>
+                
+                <li>Create a new XML file.</li>
+                
+                <li>Type or copy and paste the following code into the file:
+                <pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+
+&lt;evoslider&gt;
+  
+  &lt;slide&gt;
+    &lt;title&gt;Slide title&lt;/title&gt;
+    &lt;description&gt;Text Description&lt;/description&gt;
+    &lt;image&gt;images or video url&lt;/image&gt;
+    &lt;thumb&gt;thumbnail url&lt;/thumb&gt;
+    &lt;url&gt;http://www.evoslider.com&lt;/url&gt;
+    &lt;text_mode&gt;overlay&lt;/text_mode&gt;
+    &lt;image_scale&gt;fullSize&lt;/image_scale&gt;
+  &lt;/slide&gt;
+  
+&lt;/evoslider&gt;
+                </pre>
+                
+                <p>The &lt;title&gt; and &lt;description&gt; are self-explanatory, the &lt;image&gt; is the path to main image or 
+                video URLs (Dailymotion, Vimeo, or YouTube). The &lt;thumb&gt; is the path to the thumbnail image.</p>
+                
+                <p>The &lt;url&gt; is the URL to add to image. The &lt;text_mode&gt; is the text description layout mode ("overlay", "partialleft", or
+                "partialright"). The &lt;image_scale&gt; is the place to define the image scale mode ("fullSize", "fitImage", 
+                "fitWidth", "fitHeight", or "none").</p>                                
+                </li>
+                
+                <li>If you want to add more than one image to your Evo Slider you can do so by repeating the 
+                    &lt;slide&gt; element.</li>
+            </ol>
+            
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

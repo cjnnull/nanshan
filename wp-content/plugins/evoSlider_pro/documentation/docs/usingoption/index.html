@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Options</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Options</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Options</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                <p>The Evo Slider options covers most of the slider customizations you will need for 
+                    each implementation. There are numerous options that can be added to configure 
+                    the look and behaviour of the Evo Slider.
+                </p>
+                
+                <p>To add an option to the slider you add it to the initialisation block of code, 
+                    like so:</p>
+                                
+                <pre>
+$(&#39;#evoslider&#39;).evoSlider({
+    width: 960,
+    height: 360,
+    autoplay: true
+});
+                </pre>
+            </div>
+
+        </div>
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">List of Options</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                <br />
+                
+                <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>addLinkToImage</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Allows you to add link to image.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>addLinkToTitle</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Allows you to add link to title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>after</td>
+                        <td>Function</td>
+                        <td>function(){}</td>
+                        <td>Pro</td>
+                        <td>Callback function to run after slide transition.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>autoHideText</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Overlay text description auto hide if slide not on hover.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>autoplay</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Sets Evo Slider to play slideshow when initialized</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>before</td>
+                        <td>Function</td>
+                        <td>function(){}</td>
+                        <td>Pro</td>
+                        <td>Callback function to run before slide transition.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>classBtnNext</td>
+                        <td>String</td>
+                        <td>&quot;evo_next&quot;</td>
+                        <td>Pro</td>
+                        <td>The CSS class used for the next button.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>classBtnPrev</td>
+                        <td>String</td>
+                        <td>&quot;evo_prev&quot;</td>
+                        <td>Pro</td>
+                        <td>The CSS class used for the previous button.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>classExtLink</td>
+                        <td>String</td>
+                        <td>&quot;evo_link&quot;</td>
+                        <td>Pro</td>
+                        <td>The CSS class used for the external slide-links.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlNav</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Enables control navigation.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlNavAutoHide</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Auto hides control navigation on hover.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlNavMode</td>
+                        <td>String</td>
+                        <td>&quot;bullets&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets control navigation mode: &quot;bullets&quot;, &quot;thumbnails&quot;, or &quot;rotator&quot;.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlNavPosition</td>
+                        <td>String</td>
+                        <td>&quot;inside&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets control navigation position: &quot;inside&quot; or &quot;outside&quot;.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlNavVertical</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Sets control navigation to display vertically.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlNavVerticalAlign</td>
+                        <td>String</td>
+                        <td>&quot;right&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets the position of the vertical outside control: &quot;left&quot; or &quot;right&quot;.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>controlSpace</td>
+                        <td>Number</td>
+                        <td>5</td>
+                        <td>Pro</td>
+                        <td>The space in pixels (px) between outside control and slide.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>customIndex</td>
+                        <td>Array</td>
+                        <td>[]</td>
+                        <td>Pro</td>
+                        <td>Sets the custom index of the title bar and bullets control.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>dailymotion</td>
+                        <td>Object</td>
+                        <td>{ autoplay: 0, 
+                        logo: 0, 
+                        foreground: &quot;%23F7FFFD&quot;, 
+                        background: &quot;%23FFC300&quot;, 
+                        highlight: &quot;%23171D1B&quot;, 
+                        info: 1                         
+                        }</td>
+                        <td>Pro</td>
+                        <td>Customize the Dailymotion player.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>directionNav</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Enables directional navigation/arrows button (prev and next).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>directionNavAutoHide</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Sets directional navigation to auto hide on hover.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>easing</td>
+                        <td>String</td>
+                        <td>&quot;swing&quot;</td>
+                        <td>Pro, Lite</td>
+                        <td>A string indicating which easing function to use for the transition.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>external</td>
+                        <td>Object</td>
+                        <td>{}</td>
+                        <td>Pro</td>
+                        <td>Sets external data source.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>height</td>
+                        <td>Number</td>
+                        <td>360</td>
+                        <td>Pro, Lite</td>
+                        <td>Sets Evo Slider height.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>hideCurrentTitle</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Hides current title bar navigation (accordion).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>imageScale</td>
+                        <td>String</td>
+                        <td>&quot;fullSize&quot;</td>
+                        <td>Pro</td>
+                        <td>Defines how the main image will be scalled inside it&#39;s container.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>interval</td>
+                        <td>Number</td>
+                        <td>5000</td>
+                        <td>Pro, Lite</td>
+                        <td>Autoplay interval time in milliseconds (1s = 1000ms).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>keyboard</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Enables keyboard navigation.</td>
+                    </tr>
+                                                            
+                    <tr>
+                        <td>linkTarget</td>
+                        <td>String</td>
+                        <td>&quot;_blank&quot;</td>
+                        <td>Pro</td>
+                        <td>Image link target attribute (&quot;_blank&quot;, &quot;frame name&quot;, &quot;_parent&quot;, &quot;_self&quot;, or 
+                            &quot;_top&quot;).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>loadFinish</td>
+                        <td>Function</td>
+                        <td>function(){}</td>
+                        <td>Pro</td>
+                        <td>Callback function to run when finish loading external data.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>loadStart</td>
+                        <td>Function</td>
+                        <td>function(){}</td>
+                        <td>Pro</td>
+                        <td>Callback function to run when start loading external data.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>loop</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Rotates slideshow.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>mode</td>
+                        <td>String</td>
+                        <td>&quot;accordion&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets Evo Slider layout mode.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>mouse</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Enables mouse wheel scroll navigation.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>nextText</td>
+                        <td>String</td>
+                        <td>&quot;Next&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets the next direction navigation text.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>numberSlides</td>
+                        <td>Number</td>
+                        <td>5</td>
+                        <td>Pro</td>
+                        <td>Sets how many slides you want in your Evo Slider (external data).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>outerText</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Enables outer text description.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>outerTextPosition</td>
+                        <td>String</td>
+                        <td>&quot;right&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets the position of the outer text description.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>outerTextSpace</td>
+                        <td>Number</td>
+                        <td>5</td>
+                        <td>Pro</td>
+                        <td>The space in pixels between the outer text element and the slides.</td>
+                    </tr>
+                                        
+                    <tr>
+                        <td>pauseOnHover</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Stops slideshow on hover.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>pauseOnClick</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Stops slideshow if user click the control navigation.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>permalink</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Enable or disable linking to slides via the Url.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>playButtonAutoHide</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Sets play button to auto hide on hover.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>prevText</td>
+                        <td>String</td>
+                        <td>&quot;Prev&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets the prev direction navigation text.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>readMoreText</td>
+                        <td>String</td>
+                        <td>Read More</td>
+                        <td>Pro</td>
+                        <td>Allows you to set up the text of the read more button.</td>
+                    </tr>
+                                                            
+                    <tr>
+                        <td>rotatorThumbsAlign</td>
+                        <td>String</td>
+                        <td>&quot;left&quot;</td>
+                        <td>Pro</td>
+                        <td>Sets the float position of the rotator thumbnail images (&quot;left&quot; or &quot;right&quot;).</td>
+                    </tr>
+                                        
+                    <tr>
+                        <td>showDirectionText</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Displays the text of directional control.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>showIndex</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Displays index in toggle icon and bullets control.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>showPlayButton</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Enables play button.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>showReadMore</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Allows you to display read more button.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>showRotatorThumbs</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Shows rotator thumbnail images.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>showRotatorTitles</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Shows rotator list titles.</td>
+                    </tr>
+                                                            
+                    <tr>
+                        <td>slideSpace</td>
+                        <td>Number</td>
+                        <td>5</td>
+                        <td>Pro, Lite</td>
+                        <td>The space between slides in pixels (px).</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>speed</td>
+                        <td>Number</td>
+                        <td>500</td>
+                        <td>Pro, Lite</td>
+                        <td>The speed of the slide transition effect in milliseconds.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>startIndex</td>
+                        <td>Number</td>
+                        <td>0</td>
+                        <td>Pro, Lite</td>
+                        <td>The index of the slide to show when Evo Slider initialized.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>swipe</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro</td>
+                        <td>Enables or disables touch swipe support.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>textMode</td>
+                        <td>String</td>
+                        <td>"overlay"</td>
+                        <td>Pro</td>
+                        <td>Sets text description layout mode.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>titleClockWiseRotation</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                        <td>Pro</td>
+                        <td>Rotates title bar navigation clock wise when initialized.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>toggleIcon</td>
+                        <td>Boolean</td>
+                        <td>true</td>
+                        <td>Pro, Lite</td>
+                        <td>Enables toggle icon.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>vimeo</td>
+                        <td>Object</td>
+                        <td>{ title: 1,
+                        byline: 1,
+                        portrait: 1,
+                        autoplay: 0                       
+                        }</td>
+                        <td>Pro</td>
+                        <td>Customize the Vimeo player.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>width</td>
+                        <td>Number</td>
+                        <td>960</td>
+                        <td>Pro, Lite</td>
+                        <td>Sets Evo Slider width.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>youtube</td>
+                        <td>Object</td>
+                        <td>{ autoplay: 0,
+                            showinfo: 1,
+                            autohide: 2                      
+                        }</td>
+                        <td>Pro</td>
+                        <td>Customize the YouTube player.</td>
+                    </tr>
+                </table>
+                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

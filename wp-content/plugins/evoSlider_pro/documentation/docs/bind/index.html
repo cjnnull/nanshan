@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>bind(type, callback)</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">bind(type, callback)</h1>
+          
+          <br />
+          <p><b>Version</b>: Pro</p>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">bind(type, callback)</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            <p class="desc">
+            returns Evo Slider 
+            </p>
+
+            <div class="longdesc">
+                
+                <p>Binds a callback function to an Evo Slider event. In the callback, 
+                the <b>this</b> keyword inside the callback always refers to the same slider scope. That&#39;s mean you 
+                can access the API methods using the <b>this</b> keyword.</p>
+                                                              
+                                                                                                                                                                                                               
+                <h4>Example:</h4>
+                
+                <pre>
+&lt;script type="text/javascript"&gt;
+    var myEvoSlider = $("#mySlider").evoSlider();
+    
+    // Bind function to the onplay event
+    myEvoSlider.bind("onplay", function(){
+        var i = this.getIndex();
+        alert("Evo Slider start playing on slide " + i);
+    });
+&lt;/script&gt;
+                </pre>
+                                                
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body></html>

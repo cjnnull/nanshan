@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Dribbble's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Dribbble's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Dribbble's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display shots Dribbble.</p>
+            
+            <p>You can use the external option to load data from Dribbble.</p>
+            
+            <h4>Dribbble parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "dribbble" when you want to load content from Dribbble.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "shots" or "likes".
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>username</td>
+                        <td>String</td>
+                        <td>Dribbble user id.</td>
+                    </tr>
+                                                                                                    
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                <p>Examples:</p>
+                
+                <p>Retrieve all of a user's recent shots:</p>
+                
+                <pre>
+external: {
+    data: "dribbble",
+    source: "shots",
+    username: "dribbble_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve user like shots:</p>
+                
+                <pre>
+external: {
+    data: "dribble",
+    source: "likes",
+    username: "dribbble_user_id"
+    }                             
+                </pre>
+                
+                                           
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

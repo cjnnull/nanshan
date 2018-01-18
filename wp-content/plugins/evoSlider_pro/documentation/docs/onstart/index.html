@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>onstart</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">onstart</h1>
+          
+          <br />
+          <p><b>Version</b>: Pro</p>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">onstart</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            <p class="desc">
+                Event properties:
+                <br /><br />
+                <b>index</b> the index of the current slide 
+            </p>
+            
+            <div class="longdesc">
+                
+                <p>Triggers when the slider starts the slide transition.</p>
+                                                              
+                                                                                                                                                                                                               
+                <h4>Example:</h4>
+                
+                <pre>
+&lt;script type="text/javascript"&gt;
+    var myEvoSlider = $("#mySlider").evoSlider();
+    
+    // Bind function to the onstart event
+    myEvoSlider.bind("onstart", function( e ){
+        alert("Slide: " + e.index);
+    });
+&lt;/script&gt;
+                </pre>
+                                                
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body></html>

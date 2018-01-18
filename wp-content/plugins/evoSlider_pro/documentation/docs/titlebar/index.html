@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Customize the Title Bar Navigation</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Customize the Title Bar Navigation (Pro)</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Customize the Title Bar Navigation</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                
+                <p>You can make some customization to the title bar of the accordion slider. You can hide the current title, 
+                rotates clock wise, and sets different size for the current title.</p>
+                
+                <h4>Rotates Clock Wise</h4>
+                
+                <img src="../images/accordion_rotate_clockwise.jpg" />
+                
+                <p>To rotate the title bar clock wise, simply set the <b>titleClockWiseRotation</b> option to true, like so:</p>
+                
+                <pre>
+var myEvoSlider = $("#mySlider").evoSlider({
+    mode: "accordion",
+    titleClockWiseRotation: true
+});
+                </pre>
+                
+                <h4>Hides Current Title</h4>
+                
+                <img src="../images/accordion_hide_title.jpg" />
+                
+                <p>To hide the current title, simply set the <b>hideCurrentTitle</b> option to true, like so:</p>
+                
+                <pre>
+var myEvoSlider = $("#mySlider").evoSlider({
+    mode: "accordion",
+    hideCurrentTitle: true
+});
+                </pre>
+                
+                <h4>Sets Different Size for the Current Title</h4>
+                
+                <img src="../images/accordion_set_size.jpg" />
+                
+                <p>To give different size for the current title, you have to edit the CSS file. Open the CSS skin file, 
+                and then in the SLIDER section find the &#39;slider title bar&#39; label. In the active style of the title bar, 
+                set the <b>height</b> property value, for example:</p>
+                
+                <pre>
+/* The active state of the title bar */
+.evoslider.default dt.active
+{
+	height: 60px;
+	color: #4e4e4e;
+	background: #4e4e4e url('title_bar.png') no-repeat;
+	cursor :default;
+}
+                </pre>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

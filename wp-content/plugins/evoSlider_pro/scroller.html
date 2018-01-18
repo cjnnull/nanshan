@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>jQuery Evo Slider</title>
+    
+    <link rel="Stylesheet" type="text/css" href="css/reset.css" />
+    
+    <link rel="Stylesheet" type="text/css" href="css/evoslider.css" />
+    <link rel="Stylesheet" type="text/css" href="css/default/default.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.evoslider-2.1.4.js"></script>        
+    
+</head>
+
+<body>
+
+<div id="mySlider" class="evoslider default"> <!-- start evo slider -->
+
+    <dl>
+    
+	    <dt>slide one</dt>
+	    <dd data-src="images/slide_1.jpg" data-text="overlay">
+	        	        	        
+	        <div class="evoText">
+	            <h3>When Day And Dream Unite</h3>
+	            <p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. 
+	            Quisque dictum lorem sed sem pharetra luctus.</p>	
+	        </div>
+	        
+	    </dd>
+	
+	    <dt>slide two</dt>
+	    <dd data-src="images/slide_2.jpg" data-text="overlay">
+	        
+	        <div class="evoText">
+	            <h3>Images And Words</h3>
+	            <p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. 
+	            Quisque dictum lorem sed sem pharetra luctus.</p>
+	        </div>        
+	        
+	    </dd>
+	
+	    <dt>slide three</dt>
+	    <dd data-src="images/slide_3.jpg" data-text="overlay">	        
+	        
+	        <div class="evoText">
+	            <h3>Awake</h3>
+	            <p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. 
+	            Quisque dictum lorem sed sem pharetra luctus.</p>
+	        </div>           
+	       
+	    </dd>
+	
+	    <dt>slide four</dt>
+	    <dd data-src="images/slide_4.jpg" data-text="overlay">        
+	        
+	        <div class="evoText">
+	            <h3>Change of Season</h3>
+	            <p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. 
+	            Quisque dictum lorem sed sem pharetra luctus.</p>
+	        </div>	        
+	       
+	    </dd> 
+	    
+	    <dt>slide five</dt>
+	    <dd data-src="images/slide_5.jpg" data-text="overlay">
+	        
+	        <div class="evoText">
+	            <h3>Simplicity</h3>
+	            <p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. 
+	            Quisque dictum lorem sed sem pharetra luctus.</p>
+	        </div>	 
+	      
+	    </dd>
+	     	
+    </dl>
+
+</div> <!-- end evo slider -->
+
+<script type="text/javascript">
+            
+    var mySlider = $("#mySlider").evoSlider({
+        mode: "scroller",                   // Sets slider mode ("accordion", "slider", or "scroller")
+        width: 960,                         // The width of slider
+        height: 360,                        // The height of slider
+                
+        slideSpace: 5,                      // The space between slides
+        paddingRight: 0,                    // Padding right of the container/frame
+        titleClockWiseRotation: false,      // Rotates title bar by clock wise
+        hideCurrentTitle: false,            // Hides active title bar
+        startIndex: 0,                      // Start index when initialized
+        showIndex: true,                    // Displays index in toggle icon and bullets control
+    
+        mouse: true,                        // Enables mousewheel scroll navigation
+        keyboard: true,                     // Enables keyboard navigation (left and right arrows)
+                
+        speed: 500,                         // Slide transition speed in ms. (1s = 1000ms)
+        easing: "swing",                    // Defines the easing effect mode
+        loop: true,                         // Rotate slideshow
+        lazyLoad: false,                    // Enables lazy load feature
+    
+        autoplay: true,                     // Sets EvoSlider to play slideshow when initialized
+        interval: 5000,                     // Slideshow interval time in ms
+        pauseOnHover: true,                 // Pause slideshow if mouse over the slide
+        pauseOnClick: true,                 // Stop slideshow if playing
+        showPlayButton: true,               // Shows play/pause button when initialized
+        playButtonAutoHide: false,          // Shows play/pause button on hover and hide it when mouseout
+    
+        toggleIcon: true,                   // Enables toggle icon
+    
+        directionNav: true,                 // Shows directional navigation when initialized
+        directionNavAutoHide: false,        // Shows directional navigation on hover and hide it when mouseout
+        showDirectionText: false,           // Shows text on direction navigation
+        nextText: "Next",                   // Next button text
+        prevText: "Prev",                   // Prev button text
+    
+        controlNav: true,                   // Enables control navigation
+        controlNavMode: "bullets",          // Sets control navigation mode ("bullets", "thumbnails", or "rotator")
+        controlNavVertical: false,          // Defines control navigation to display vertically
+        controlNavPosition: "inside",       // Sets control navigation position ("inside" or "outside")
+        controlNavVerticalAlign: "right",   // Sets position of the vertical control navigation ("left" or "right")
+        controlSpace: 5,                    // The space between outside control navigation with slides 
+        controlNavAutoHide: false,          // Shows control navigation on mouseover and hide it when mouseout
+    
+        showRotatorTitles: true,            // Shows rotator titles
+        showRotatorThumbs: true,            // Shows rotator thumbnails
+        rotatorThumbsAlign: "left",         // Thumbnails float position
+    
+        classBtnNext: "evo_next",           // The CSS class used for the next button
+        classBtnPrev: "evo_prev",           // The CSS class used for the previous button
+        classExtLink: "evo_link",           // The CSS class used for the external links
+        permalink: false,                   // Enable or disable linking to slides via the url
+    
+        autoHideText: false,                // Shows overlay text on mouseover and hide it on mouseout    
+        outerText: false,                   // Enables outer text
+        outerTextPosition: "right",         // Outer text align ("left" or "right")
+        outerTextSpace: 5,                  // Space between text and slide
+    
+        linkTarget: "_blank",               // The target attribute of the image link ("_blank", "_parent", "_self", or "_top")
+        imageScale: "none",             // Sets image scale option ("fullSize", "fitImage", "fitWidth", "fitHeight", "none")
+    
+        before: function(){},               // Callback, triggers before slide transition
+        after: function(){},                // Callback, triggers after slide transition
+        
+        youtube: {                          // Customize the YouTube player parameters
+            autoplay: 0,
+            showinfo: 1,
+            autohide: 2
+        },
+    
+        vimeo: {                            // Customize the Vimeo player parameters
+            title: 1,
+            byline: 1,
+            portrait: 1,
+            autoplay: 0
+        },
+    
+        dailymotion: {                      // Customize the Dailymotion player parameters 
+            autoplay: 0,
+            logo: 0,
+            foreground: "%23F7FFFD",
+            background: "%23FFC300",
+            highlight: "%23171D1B",
+            info: 1
+        }                    
+    });                                
+    
+</script>
+    
+</body>
+</html>

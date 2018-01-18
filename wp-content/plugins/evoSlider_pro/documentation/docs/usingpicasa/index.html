@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Google+ / Picasa's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Google+ / Picasa's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Google+ / Picasa's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display images from Google+ / Picasa service.</p>
+            
+            <p>You can use the external option to load data from Google+ / Picasa.</p>
+            
+            <h4>Picasa parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "picasa" when you want to load content from Picasa.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "recent" or "album".
+                        </td>
+                    </tr>
+                                                         
+                    <tr>
+                        <td>user_id</td>
+                        <td>String</td>
+                        <td>Google+ / Picasa user id (the number in the URL when you visit your 
+                        <a href="https://plus.google.com/me" target="_blank">Google+ profile</a>).</td>
+                    </tr>
+                                                            
+                    <tr>
+                        <td>album_id</td>
+                        <td>String</td>
+                        <td>Album id. The last number in the URL when you visit an album.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>tags</td>
+                        <td>String</td>
+                        <td>Includes all tags associated with the specified user, album, or photo.</td>
+                    </tr>
+                                                                                                                                            
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                                
+                <p>Examples:</p>
+                
+                <p>Retrieve all of a user's recent photos:</p>
+                
+                <pre>
+external: {
+    data: "picasa",
+    source: "recent",
+    user_id: "google+_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve user photos by tags:</p>
+                
+                <pre>
+external: {
+    data: "picasa",
+    source: "recent",
+    user_id: "google+_user_id",
+    tags: "tag1,tag2,..."
+    }                             
+                </pre>
+                
+                <p>Retrieve user's album photos:</p>
+                
+                <pre>
+external: {
+    data: "picasa",
+    source: "album",
+    user_id: "google+_user_id", 
+    album_id: "album_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve user's album photos by tags:</p>
+                
+                <pre>
+external: {
+    data: "picasa",
+    source: "album",
+    user_id: "google+_user_id",
+    album_id: "album_id"
+    tags: "tag1,tag2,..."
+    }                             
+                </pre>
+                
+                                           
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

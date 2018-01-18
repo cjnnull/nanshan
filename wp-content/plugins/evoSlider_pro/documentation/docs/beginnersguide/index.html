@@ -1,0 +1,738 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Beginners Guide</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Beginners Guide</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <p class="desc">This tutorial takes you through the very basics of setting up Evo Slider. 
+            If you&#39;re an experienced developer check out the quick start tutorial instead.</p>
+        
+        <br />
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">1. Create your HTML file</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+
+        <div class="longdesc">
+            
+            <p>Open the application you prefer to code markup in. This could be a WYSIWYG editor 
+            such as Adobe Dreamweaver or a plain text editor such as Notepad on Windows or TextEdit on Mac.
+            </p> 
+            <p>If you&#39;re using a WYSIWYG editor such as Dreamweaver start a new HTML file then select the
+            &#39;Code&#39; view.
+            </p>
+            <p>If you&#39;re not using a WYSIWYG editor, start a new file and type (or copy and paste) the 
+            following markup:
+            </p> 
+                    <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+                    </pre>
+                
+            <p>Save the file as &#39;index.html&#39;.</p>
+                                       
+
+        </div> 
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">2. Create Evo Slider Markup</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>To create a slider in the Evo Slider markup you add a <b>&lt;div&gt;</b> element with the class 
+                        &#39;evoslider&#39; 
+                    inside the <b>&lt;body&gt;</b> element of your file. Give an &#39;id&#39; to the div element and don&#39;t forget 
+                    to add skin name in the class attribute.
+                </p>        
+                <p>Your file should now look like this:</p> 
+                        
+                        <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+                        </pre>
+                <p>Every time you create Evo Slider you have to add &#39;evoslider class into the <b>&lt;div&gt;</b> element. 
+                The &#39;default&#39; class is the name of CSS skin.</p>
+                
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">3. Adding Slides</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>We use a definition list (<b>&lt;dl&gt;</b>) element to create the structure of the slides. 
+                Add the following code to create four slides:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;
+	
+	    &lt;dt&gt;&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;
+	
+	    &lt;dt&gt;&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;
+	
+	    &lt;dt&gt;&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                
+                <p>The <b>&lt;dt&gt;</b> element will work as the title bar navigation in accordion mode. 
+                The <b>&lt;dd&gt;</b> element will work as the slide content area.</p>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">4. Adding Titles</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>Add the title of the slides inside the <b>&lt;dt&gt;</b> element. The text inside the &lt;dt&gt; element 
+                will display in the title bar navigation (accordion) and rotator list navigation.</p>
+                
+                <p>Your file should now look like this:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd&gt;&lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">5. Adding HTML Contents</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>You can add HTML contents inside the <b>&lt;dd&gt;</b> element.</p>
+                
+                <p>Your file should now look like this after you add simple text into the slide content area:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd&gt;slide one content&lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd&gt;slide two content&lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd&gt;slide three content&lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd&gt;slide four content&lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+                
+                <p>You can place any HTML tags inside the <b>&lt;dd&gt;</b> element.</p>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">6. Adding Images (Pro)</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>You have two ways to include image on your slide. First, by using the &#39;<b>data-src</b>&#39; attribute. 
+                And the second is 
+                by adding directly inside the <b>&lt;dd&gt;</b> element using the <b>&lt;img&gt;</b> tag.</p>
+                
+                <p>If you want to load the image in sequential or lazy load mode, you have to use the 
+                    &#39;data-src&#39; attribute. 
+                Here&#39;s how to include images using the &#39;data-src&#39; attribute:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">7. Adding a URL to images</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>To add a URL to images simply enter the URL address into the custom &#39;<b>data-url</b>&#39; attribute, 
+                like so:
+                </p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-url="http://your-domain.com"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-url="http://your-domain.com"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-url="http://your-domain.com"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg" data-url="http://your-domain.com"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">8. Adding Videos (Pro)</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>You can also add videos into your slides. You can use the &#39;<b>data-src</b>&#39; attribute to enter the address of the video. 
+                Currently, the &#39;data-src&#39; attribute only support video from YouTube or Vimeo website. 
+                To enter video from other website, you can use the embed method below.</p>
+                
+                <p>Here&#39;s an example how to add videos using the &#39;data-src&#39; attribute:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="http://vimeo.com/34381687"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="http://www.youtube.com/watch?v=WQro3kvKCtk"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="http://vimeo.com/34381687"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="http://www.youtube.com/watch?v=WQro3kvKCtk"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">9. Adding Embed Object (Pro)</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>For the video or flash object that do not support by the &#39;data-src&#39; attribute, you can add the embed object 
+                inside the &#39;<b>evoEmbed</b>&#39; class element. Here&#39;s how to do that:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd&gt;
+	        &lt;div class="evoEmbed"&gt;
+	            &lt;iframe src="http://player.vimeo.com/video/35965795?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" 
+	                width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;
+	            &lt;/iframe&gt;
+	        &lt;/div&gt;
+	    &lt;/dd&gt;	    
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">10. Adding Text Description (Pro)</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>You can add text description for the media content (images, videos, and embed object) in three layout mode: 
+                overlay, partial left, and partial right.</p>
+                
+                <p>You can setting up the text mode via the custom &#39;<b>data-text</b>&#39; attribute by entering one of the following values:
+                    &#39;overlay&#39;, &#39;partialleft&#39;, or &#39;partialright&#39;.</p>
+                
+                <p>You can enter the text description in the &#39;<b>evoText</b>&#39; class element and placing any HTML tags inside it.</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-text="overlay"&gt;
+	        &lt;div class="evoText"&gt;
+	            text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="http://www.youtube.com/watch?v=WQro3kvKCtk" data-text="partialleft"&gt;
+	        &lt;div class="evoText"&gt;
+	            text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="http://vimeo.com/34381687" data-text="partialright"&gt;
+	        &lt;div class="evoText"&gt;
+	            text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-text="overlay"&gt;
+	        &lt;div class="evoText"&gt;
+	            text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">11. Adding Thumbnail Images (Pro)</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>Thumbnail images use in the thumbnail carousel and rotator list navigation. To include thumbnail images, just 
+                enter the image address in the custom &#39;<b>data-thumb</b>&#39; attribute, like so:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-thumb="image1-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-thumb="image2-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-thumb="image3-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg" data-thumb="image4-thumb.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">12. Importing Styles</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>To make Evo Slider work well, you need to include two styles into your page. First, the &#39;evoslider.css&#39; 
+                and second is your skin stylesheet (i.e. default.css).</p>
+                                               
+                <p>Add the following link element to the head of your HTML document to import the styles for the Evo Slider:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                
+                <p>The &#39;evoslider.css&#39; file is mandatory, that&#39;s mean you have to include it 
+                every time you create an Evo Slider.</p>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">13. Importing Scripts</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>The next stage is importing the required javascript into the file to power the Evo Slider.</p>
+                
+                <p>Modify the head section to import the necessary JavaScript file, like so:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    
+    &lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.evoslider.js"&gt;&lt;/script&gt;   
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-thumb="image1-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-thumb="image2-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-thumb="image3-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg" data-thumb="image4-thumb.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                
+                <p>The jQuery Easing plugin is optional. You only need this file if you want to use more easing functions 
+                instead of the default: &#39;swing&#39; and &#39;linear&#39;.</p>
+            </div>        
+        </div>
+        
+        <br /><br />
+        <!-- ////////////////// -->
+        
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">14. Initializing Evo Slider Plugin</span> 
+        </h2>
+        
+        <div class="jq-box roundBottom entry-details">
+            <div class="longdesc">
+                <p>It&#39;s time to activate the Evo Slider by initializing it. Add the following code just before the closing 
+                body tag:</p>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    
+    &lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.evoslider.js"&gt;&lt;/script&gt;   
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-thumb="image1-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-thumb="image2-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-thumb="image3-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg" data-thumb="image4-thumb.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;script type="text/javascript"&gt;
+    var myEvoSlider = $("#mySlider").evoSlider();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+                
+                <p>Finally, save the file and open it in a browser to see the slider working.</p>
+            </div>        
+        </div>
+        
+        <!-- ////////////////// -->
+        
+        
+        
+        
+
+    </div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Adding Videos</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Adding Videos</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Adding Videos</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>
+            There are two ways to include a video into your slide. First, through the "data-src" custom attribute. The "data-src" attribute 
+            only support the video URL from Dailymotion, Vimeo and YouTube. 
+            The other way to include a video is by using the evoEmbed class element. 
+            </p>
+            
+            <h4>Adding Video Through The "data-src" Attribute</h4>
+            
+            <p>The "data-src" attribute only support video URL of the Dailymotion, Vimeo, and YouTube. 
+            Simply paste the URL into the "data-src" attribute, like so:</p>
+                                                                                                                             
+                
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="http://www.youtube.com/watch?v=e3zb1hxwLDE"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="http://vimeo.com/7449107"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="http://www.dailymotion.com/video/xpqlc1_it-s-gonna-be-hard_fun"&gt;
+	    &lt;/dd&gt;
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                
+            
+                
+            <h4>Using The evoEmbed Element</h4>
+            
+            <p>
+            For the video that not support by the "data-src" attribute, you can include the video through the evoEmbed element, 
+            like so:
+            </p>
+                 
+                
+<pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd&gt;
+	        &lt;div class="evoEmbed"&gt;
+	            &lt;iframe src="http://player.vimeo.com/video/35965795?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" 
+	                width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;
+	            &lt;/iframe&gt;
+	        &lt;/div&gt;
+	    &lt;/dd&gt;	    
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                </pre>
+                
+                <h4>Video Thumbnail</h4>
+                
+                <p>The thumbnail image will load automatically from each provider (Dailymotion, Vimeo and YouTube) 
+                as long as you don't define the "data-thumb" attribute.</p>
+			
+                                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

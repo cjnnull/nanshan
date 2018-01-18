@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>classExtLink</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">classExtLink</h1>
+          
+          <br />
+          <p><b>Version</b>: Pro</p>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">classExtLink</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            <p class="desc">
+            type: String
+            <br /><br />
+            default: &quot;evo_link&quot;
+            </p>
+
+            <div class="longdesc">
+                
+                <p>The CSS class used for the external slide-links. You can link directly to any slide by adding links 
+                anywhere on the page.</p>
+                
+                <p>The href attribute should match the id of your Evo Slider. The rel attribute defines the number of 
+                the slide to link. Each external link must have the class that set in the option.</p>
+                
+                <h4>Example:</h4>
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    &lt;!--[if IE]&gt;
+        &lt;link rel="stylesheet" type="text/css" href="css/default/default.ie.css" /&gt;
+    &lt;![endif]--&gt;
+    
+    &lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.evoslider-1.0.0.min.js"&gt;&lt;/script&gt;   
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-thumb="image1-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-thumb="image2-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-thumb="image3-thumb.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg" data-thumb="image4-thumb.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt;
+
+&lt;a href="#mySlider" class="evo_link" rel="3"&gt;External link&lt;/a&gt; 
+
+&lt;script type="text/javascript"&gt;
+    
+    var myEvoSlider = $("#mySlider").evoSlider({
+        classExtLink: "evo_link"
+    });
+    
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                                                
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body></html>

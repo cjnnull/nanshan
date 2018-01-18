@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Image Scaling</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Image Scaling (Pro)</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Image Scaling</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                
+			
+			<p>You can define how the main image will be scalled inside it&#39;s container using the following values:</p>
+			                   
+            <ol>
+                <li><b>&quot;fullSize&quot;</b>: all images will be scaled to fill the container, centered and cropped.</li>
+                <li><b>&quot;fitImage&quot;</b>: all images will be scaled to be fitted with the container, centered and resized.</li>
+                <li><b>&quot;fitWidth&quot;</b>: all images width will be scaled to be fitted with the container&#39;s width.</li>
+                <li><b>&quot;fitHeight&quot;</b>: all images height will be scaled to be fitted with the container&#39;s height.</li>
+                <li><b>&quot;none&quot;</b>: no image scale option applied.</li>
+            </ol>
+            
+            <p>There are two ways to implement image scale option. First, by setting individually via the custom 
+                &quot;data-scale&quot; 
+            attribute. Or, by setting universally via the <b>imageScale</b> option.</p>
+            
+            <div class="separator-line"></div>
+                
+            <h4 id="Sets_individually">Sets individually via the "data-scale" attribute</h4>
+            
+            <p>You can define image scale option to each image individually via the custom &quot;data-scale&quot; attribute.</p>    
+                                                                                                                                                                
+                
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-scale="fullSize"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-scale="fitImage"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-scale="fitWidth"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg" data-scale="fitHeight"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                
+            <div class="separator-line"></div>
+                
+            <h4 id="Sets_via_the_imageScale">Using the imageScale option</h4>
+            
+            <p>To sets image scale option universally for all images, you can do this via the <b>imageScale</b> option.</p>
+            
+            
+                
+                <pre>
+var myEvoSlider = $("#mySlider").evoSlider({
+    imageScale: "fitImage"
+});
+                </pre>
+			
+                                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

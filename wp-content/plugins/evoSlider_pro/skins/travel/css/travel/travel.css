@@ -1,0 +1,632 @@
+﻿/*
+Evo Slider Pro v2.1.0 - jQuery slideshow and content slider plugin
+http://evoslider.com
+
+Copyright 2012, Fikri Rakala
+http://codecanyon.net/user/evoslider
+CodeCanyon Regular License
+
+Skin Name: Travel
+*/ 
+
+/*
+TABLE OF CONTENTS
+
+01 SLIDER
+02 TOGGLE ICON/INDEX
+03 DIRECTION NAVIGATION
+04 CONTROL NAVIGATION (BULLETS, THUMBNAILS, ROTATOR)
+05 PLAY/PAUSE BUTTON
+06 CONTENT
+07 TEXT DESCRIPTION
+*/
+ 
+ 
+/*  _______________________________________
+
+	01 SLIDER
+    _______________________________________  */
+	
+/* Container / frame surrounding the slider */
+.evoslider.travel
+{
+	position: relative;
+	width :960px; /* set width via option */
+	height :360px; /* set height via option */
+    margin: 0 auto;
+	border: 15px solid #f8f8f8;
+	padding: 0;
+	padding-bottom: 60px;
+	background :#f8f8f8;
+	overflow : visible ;
+	
+	/* shadow */
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Color=#4e4e4e, direction=120, strength=5)";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#4e4e4e, direction=120, strength=5);  
+}
+
+/* Content preloader */
+.evoslider.travel .contentLoader
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background: #000 url("spinner.gif") no-repeat center;
+}
+
+/* You can set up the border of the dl element here  */
+.evoslider.travel dl
+{
+	border: 0;
+	overflow: visible;
+}
+
+/*
+Slider title bar.
+
+The title bar are rotated, so you will need to swap your directions.
+To change the width of the title bar, you will need to modify the height property.
+You will also need to make sure that any background imagery used is rotated horizontally.
+
+To give unique custom appearance for each title, you can give a unique class for each title, for example:
+	.evoslider dt.slide_1
+	.evoslider dt.slide_2
+	.evoslider dt.slide_3
+	etc...
+*/ 
+.evoslider.travel dt
+{
+	height : 45px;
+    color :#4e4e4e;
+    font-family :Arial , Verdana;
+    font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing :1px;
+	line-height: 40px;
+	text-align : left;
+	padding-left: 70px;
+    background: #4e4e4e url('../demo11/title_bar.png') no-repeat;
+    
+    /* text shadow */
+	text-shadow: -1px 1px 1px #9f9f9f;
+}
+
+/* The hover state of the title bar */ 
+.evoslider.travel dt:hover
+{
+	cursor :pointer ;
+	color: #4e4e4e;
+}
+
+/* The active state of the title bar */
+.evoslider.travel dt.active
+{
+	color: #4e4e4e;
+	background: #4e4e4e url('../demo11/title_bar.png') no-repeat;
+	cursor :default;
+}
+
+/* 
+The slide content area
+
+The width and height will automatically be defined by the plugin.
+*/
+.evoslider.travel dd 
+{
+	background: #fff;
+	overflow: visible;
+}
+
+
+/*  _______________________________________
+
+	02 TOGGLE ICON/INDEX
+    _______________________________________  */
+
+/* 
+The toggle icon of title bar.
+
+You can specify the position of the icon by setting its left and top position.
+You can set the toggle icon for the default, hover, and active state via the background property.
+To display index, set the showToggleIndex plugin option to true.
+*/
+.evoslider.travel dt .toggle_icon
+{
+	left : 5px;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	font-family: Arial, Verdana ;
+    font-size: 18px;
+	font-weight: bold;
+	color :#4e4e4e;
+	text-align: center ;
+	
+	/* text shadow*/
+	text-shadow: 0 1px 1px #9f9f9f;	
+}
+
+/* Toggle icon position for ie8+  */
+.evoslider.travel dt .toggle_icon.ie 
+{
+	left: 0;
+	top: auto;
+	bottom: 5px;
+}
+
+/* The hover state of the toggle icon */ 
+.evoslider.travel dt:hover .toggle_icon
+{
+	color: #4e4e4e;
+}
+
+/* The active state of the toggle icon */
+ 
+.evoslider.travel dt.active .toggle_icon
+{
+	color : #4e4e4e;
+}
+
+
+/*  _______________________________________
+
+	03 DIRECTION NAVIGATION
+    _______________________________________  */
+
+/* The arrow next */
+.evoslider.travel .arrow_next 
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	position :absolute;
+		right : 10px;
+		top : 150px;
+		width : 35px;
+		height : 34px;
+	background : url('../demo11/arrows.png') no-repeat -35px 0;
+		cursor : pointer;
+		margin :0;
+		padding :0;
+		text-decoration: none;
+}
+
+/* The hover state of the arrow next */
+.evoslider.travel .arrow_next:hover
+{
+	cursor: pointer;
+}
+
+/*
+The state of the arrow next on the last item 
+when the loop option is set to false. 
+*/
+.evoslider.travel .arrow_next.last
+{
+	cursor: default ; 
+}
+
+/* The arrow prev */
+.evoslider.travel .arrow_prev 
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	position :absolute;
+		left: 10px;
+		top: 150px;
+		width: 35px;
+		height: 34px;
+	background : url('../demo11/arrows.png') no-repeat 0 0;
+		cursor :pointer;
+		margin :0;
+		padding :0;
+		text-decoration: none;
+}
+
+/* The hover state of the arrow prev */
+.evoslider.travel .arrow_prev:hover 
+{
+	cursor: pointer;
+}
+
+/* 
+The state of the arrow prev on the first item,
+when the loop option is set to false. 
+*/
+.evoslider.travel .arrow_prev.first
+{
+	cursor :default ;
+}
+
+
+/*  _______________________________________
+
+	04 CONTROL NAVIGATION (BULLETS, THUMBNAILS, ROTATOR)
+    _______________________________________  */
+
+/* The container of the control if set to outside */
+.evoslider.travel .outer_control
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #d3d3d3;
+}
+
+/* Control navigation container */
+.evoslider.travel .controlNav 
+{
+	right : 0px;
+	bottom : 5px;
+	margin :0;
+	border : 0;
+}
+
+.evoslider.travel .control_wrapper 
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Control list */
+.evoslider.travel .controlNav ul 
+{
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* The bullets control */
+.evoslider.travel .controlNav li.bullets 
+{
+	width : 23px;
+	height : 23px;
+	margin : 5px;
+	padding :0;
+	border :none;
+	overflow: visible;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	color: #4e4e4e;
+	background: url(  "bullets.png" ) no-repeat;
+}
+
+/* Bullet last item */
+.evoslider.travel .controlNav li.bullets.last 
+{
+}
+
+/* The hover state of the bullets control */
+.evoslider.travel .controlNav li.bullets:hover
+{
+	background: url(  "bullets.png" ) no-repeat -29px 0;
+	color: #fafafa;
+}
+
+/* The active state of the bullets control */
+.evoslider.travel .controlNav li.bullets.active 
+{
+	background: url(  "bullets.png" ) no-repeat -29px 0;
+	color: #fafafa;
+}
+
+/* Thumbnails control */
+.evoslider.travel .controlNav li.thumbnails 
+{
+	width : 113px;
+	height : 72px;
+	margin : 5px;
+	margin-bottom: 0;
+	padding :0;
+	border :none;
+	background : #eee;
+	overflow: visible;
+}
+
+/* Thumbnail last item */
+.evoslider.travel .controlNav li.thumbnails.last 
+{
+	margin-bottom: 5px;
+}
+
+/* The hover state of the thumbnail item */
+.evoslider.travel .controlNav li.thumbnails:hover
+{
+	background: #4e4e4e;
+}
+
+/* The active state of the thumbnail */
+.evoslider.travel .controlNav li.thumbnails.active 
+{
+	background: #4e4e4e;
+}
+
+/* Overlay effect */
+.evoslider.travel .controlNav li.thumbnails .overlay 
+{
+	background-color: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+/* The hover state of the overlay effect */
+.evoslider.travel .controlNav li.thumbnails:hover .overlay
+{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/* The active state of the overlay effect */
+.evoslider.travel .controlNav li.thumbnails.active .overlay 
+{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+
+/* Rotator list navigation */
+.evoslider.travel .controlNav li.rotator 
+{
+	width : 200px;
+	height : 85px;
+	margin : 0;
+	margin-bottom: 2px;
+	padding: 5px 10px;
+	border :none;
+	background : #eee;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+}
+
+/* Rotator last item */
+.evoslider.travel .controlNav li.rotator.last 
+{
+	margin-bottom: 0;
+}
+
+/* Rotator list thumbnails */
+.evoslider.travel .controlNav li.rotator img 
+{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: 10px;
+}
+
+/* Rotator title */
+.evoslider.travel .controlNav li.rotator p
+{
+	margin-top: 5px;
+	text-align: left;
+}
+
+.evoslider.travel .controlNav li.rotator p span.title
+{
+	display: block;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.evoslider.travel .controlNav li.rotator p span.date
+{
+	display: block;
+	color: #db7030;
+	font-size: 11px;
+}
+
+/* The hover state of the rotator list */
+.evoslider.travel .controlNav li.rotator:hover
+{
+	cursor: pointer;
+}
+
+/* The active state of the rotator list */
+.evoslider.travel .controlNav li.rotator.active 
+{
+	cursor : default ;
+}
+
+.evoslider.travel .controlNav li.rotator.active span.title
+{
+	color: #db7030;
+}
+
+.evoslider.travel .controlNav li.rotator.active span.date
+{
+}
+
+
+/*  _______________________________________
+
+	05 PLAY/PAUSE BUTTON
+    _______________________________________  */
+
+/* Play button container */
+.evoslider.travel .control_autoplay
+{
+	top: 10px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	background: #fafafa;
+	border: solid 1px #d9d9d9;
+}
+
+/* Play button position on accordion mode */
+.evoslider.travel dd .control_autoplay
+{
+	top: 5px;
+	right: 5px;
+}
+
+/* Pause button */
+.evoslider.travel .pause_button 
+{
+    width: 22px;
+    height: 22px;
+    background: url('../demo11/play.png') no-repeat -22px 0;
+    cursor: pointer;
+}
+
+/* Play button */
+.evoslider.travel .play_button 
+{
+    width: 22px;
+    height: 22px;
+    background: url('../demo11/play.png') no-repeat 0 0 ;
+    cursor: pointer;
+}
+
+
+/*  _______________________________________
+
+	06 CONTENT
+    _______________________________________  */
+
+/* Image container */
+.evoslider.travel .evoImage 
+{
+	background: #000 url("spinner.gif") no-repeat center;
+}
+
+.evoslider.travel .evoImage .videoOverlay
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url("video.png") no-repeat center;
+	cursor: pointer;
+}
+
+/* Video container */
+.evoslider.travel .evoVideo 
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000 url("spinner.gif") no-repeat center;
+}
+
+/* Embed object container */
+evoslider.travel .evoEmbed 
+{
+	background-color: #000;
+}
+
+evoslider.travel dd .evoEmbed img
+{
+	max-width: 100%;
+	height: 100%;
+}
+
+
+/*  _______________________________________
+
+	07 TEXT DESCRIPTION
+    _______________________________________  */
+
+/* Overlay text */
+.evoslider.travel .evoText.overlay 
+{
+	left: 0px;
+	bottom: -55px;
+	padding: 0px;
+	width: 750px;
+	text-align: left;
+}
+
+.evoslider.travel .evoText.overlay h3 {
+	padding-bottom: 5px;
+	color: #4e4e4e;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.evoslider.travel .evoText.overlay p {
+	color: #4e4e4e;
+	font-size: 12px;
+}
+
+/* Partial left */
+.evoslider.travel .evoText.partialleft 
+{
+	width: 250px;
+	background-color: #FAFAFA;
+	padding: 20px;
+}
+
+.evoslider.travel .evoText.partialleft h3 {
+	font-size: 14px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #4e4e4e;
+}
+
+.evoslider.travel .evoText.partialleft p {
+	padding-bottom: 0px;
+	padding-top: 5px;
+	color: #4e4e4e;
+}
+
+/* Partial right */
+.evoslider.travel .evoText.partialright 
+{
+	width: 250px;
+	background-color: #FAFAFA;
+	padding: 20px;
+}
+
+.evoslider.travel .evoText.partialright h3 {
+	font-size: 14px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #4e4e4e;
+}
+
+.evoslider.travel .evoText.partialright p {
+	padding-bottom: 0px;
+	padding-top: 5px;
+	color: #4e4e4e;
+}
+
+/* Outer text */
+.evoslider.travel .outerText 
+{
+	width: 250px;
+	background-color: #FAFAFA;
+	padding: 20px;
+}
+
+.evoslider.travel .outerText h3 {
+	font-size: 16px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #4e4e4e;
+}
+
+.evoslider.travel .outerText p {
+	padding-bottom: 0px;
+	padding-top: 5px;
+	color: #4e4e4e;
+}

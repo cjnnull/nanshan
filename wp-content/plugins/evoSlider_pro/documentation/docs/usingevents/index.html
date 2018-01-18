@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Events</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Events (Pro)</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Events</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                <p>You can bind functions to the Evo Slider events on run time. All callbacks contains an event object 
+                as a function argument. In the callback, the <b>this</b> keyword inside the callback always refers to 
+                the same slider scope.</p>
+                
+                <p>Use <b>.bind()</b> to listen to the Evo Slider events. Example:</p>
+                
+                <pre>
+&lt;script type="text/javascript"&gt;
+    var myEvoSlider = $("#mySlider").evoSlider();
+    
+    // Bind function to the onplay event
+    myEvoSlider.bind("onplay", function(){
+        var i = this.getIndex();
+        alert("Evo Slider start playing on slide " + i);
+    });
+&lt;/script&gt;
+                </pre>
+                
+                <p>You can see the list of events in the Events section of this userguide.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

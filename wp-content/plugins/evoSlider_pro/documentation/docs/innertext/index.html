@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Working with Text</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Working with Text (Pro)</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Inner Text</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+                
+                <p>Media contents (images, videos, and embed object) can have one of the three layout of the inner text.  
+                The overlay, partial left, and partial right layout text can create dinamically simply by setting the custom 
+                    &#39;data-text&#39; attribute of the dd element to the one of the following values:</p>
+                
+                <ol>
+                    <li><b>overlay</b>: creating overlay text.</li>
+                    <li><b>partialleft</b>: creating partial left text.</li>
+                    <li><b>partialright</b>: creating partial right text.</li>
+                </ol>
+                
+                <p>Here&#39;s an example of how to create the inner text description:</p>
+                
+                <pre>
+&lt;div id="mySlider" class="evoslider default"&gt;      
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg" data-text="overlay"&gt;
+	        &lt;div class="evoText"&gt;
+	            slide one text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg" data-text="partialleft"&gt;
+	        &lt;div class="evoText"&gt;
+	            slide two text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg" data-text="partialright"&gt;
+	        &lt;div class="evoText"&gt;
+	            slide three text description
+	        &lt;/div&gt;
+	    &lt;/dd&gt;
+    
+    &lt;/dl&gt;
+&lt;/div&gt;
+                </pre>
+                
+                <p>The text description must place inside the &#39;evoText&#39; class element.</p>               
+                      
+            </div>
+            
+            <h2 class="jq-clearfix roundTop section-title">
+                <span class="name">Outer Text</span> 
+            </h2>
+
+            <div class="jq-box roundBottom entry-details">
+            
+                <div class="longdesc">
+                    
+                    <img src="../images/outer_text.jpg" />
+                    
+                    <p>If you want to place the text description in the outside of the slider, you can activate the outer text feature. 
+                    Simply sets the &#39;outerText&#39; option to true to activate it, like so:</p>
+                
+                    <pre>
+var myEvoSlider = $("#mySlider").evoSlider({
+    outerText: true,                   
+    outerTextPosition: "right",         
+    outerTextSpace: 5                    
+});
+                    </pre>
+                    
+                    <p>The outer text content automatically use the content of the &#39;evoText&#39; element. Just remember,  
+                    the outer text feature only support by the slider and scroller mode.</p>
+                    
+                </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body></html>

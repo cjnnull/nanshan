@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Quick start</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Quick start</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Quick start</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+
+        <div class="longdesc">
+            <p>The Evo Slider plugin is extremely simple to use, however if you are new to jQuery or working 
+            in a browser, we recommend that you read the &#39;Beginners Guide&#39; section of this userguide in 
+            place of this quick start guide.</p>
+            
+            <p>Follow this quick step to start using Evo Slider plugin:</p>
+
+            <ol>
+                <li>Create a new HTML file.</li>
+                <li>Copy the Evo Slider folder into the same directory where your HTML file is.</li>
+                <li>Imports the Evo Slider stylesheet and the default skin into your HTML file, like so:
+                    <br /><br />
+                    
+                    <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+       
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </li>
+                <li>Import the latest version of jQuery and the Evo Slider file:
+                    <br /><br />
+                    
+                    <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    
+    &lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.evoslider.js"&gt;&lt;/script&gt;   
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                    
+                </li>
+                <li>Add the following markup to the body of the HTML file, in order to build a slider
+                    containing three slides:
+                    <br /><br />
+                    
+                    <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    
+    &lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.evoslider.js"&gt;&lt;/script&gt;   
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one title&lt;/dt&gt;
+	    &lt;dd&gt;
+	        slide one content
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two title&lt;/dt&gt;
+	    &lt;dd&gt;
+	        slide two content
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three title&lt;/dt&gt;
+	    &lt;dd&gt;
+	        slide three content
+	    &lt;/dd&gt;
+    
+    &lt;/dl&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </li>
+                <li>Add the following code just before the closing &lt;body&gt; tag to initialize the Evo Slider plugin:
+                <br /><br />
+                
+                <pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Evo Slider&lt;/title&gt;
+    
+    &lt;link rel="Stylesheet" type="text/css" href="css/evoslider.css" /&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="css/default/default.css" /&gt;
+    
+    &lt;script type="text/javascript" src="scripts/jquery-1.7.1.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="scripts/jquery.evoslider.js"&gt;&lt;/script&gt;   
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="mySlider" class="evoslider default"&gt;    
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one title&lt;/dt&gt;
+	    &lt;dd&gt;
+	        slide one content
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two title&lt;/dt&gt;
+	    &lt;dd&gt;
+	        slide two content
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three title&lt;/dt&gt;
+	    &lt;dd&gt;
+	        slide three content
+	    &lt;/dd&gt;
+    
+    &lt;/dl&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+    $("#mySlider").evoSlider();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                
+                You can now test the HTML file in a browser to see your Evo Slider.
+                </li>
+            </ol>
+                        
+
+        </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body></html>

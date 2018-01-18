@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Instagram's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Instagram's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Instagram's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display photos from Instagram service.</p>
+            
+            <p>You can use the external option to load data from Instagram.</p>
+            
+            <h4>Instagram parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "instagram" when you want to load content from Instagram.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "recent" or "liked".
+                        </td>
+                    </tr>
+                                                         
+                    <tr>
+                        <td>username</td>
+                        <td>String</td>
+                        <td>Instagram user name.</td>
+                    </tr>
+                                                            
+                    <tr>
+                        <td>access_token</td>
+                        <td>String</td>
+                        <td>Instagram's API requires an access token to access your photos. 
+                        Click <a target="_blank" href="https://instagram.com/oauth/authorize/?client_id=80c4c73a28fa45699072beaf3b4a9255&redirect_uri=http://www.evoslider.com&response_type=token">here</a> 
+                        to get your token.
+                        <br />
+                        Once the you have authenticated and then authorized our application, 
+                        you will redirect to our redirect_uri with the access_token in the url fragment. It'll look like so:
+                        <br /><br />
+                        <b>http://our-redirect-uri#access_token=ACCESS-TOKEN</b> 
+                        <br /><br />
+                        Simply grab the access_token off the URL fragment.                         
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                                
+                <p>Examples:</p>
+                
+                <p>Retrieve user recent photos:</p>
+                
+                <pre>
+external: {
+    data: "instagram",
+    access_token: "your_access_token",
+    source: "recent",
+    username: "instagram_username"
+    }                             
+                </pre>
+                
+                <p>Retrieve photo you likes:</p>
+                
+                <pre>
+external: {
+    data: "instagram",
+    access_token: "your_access_token",
+    source: "liked"
+    }                             
+                </pre>
+                
+                                                                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

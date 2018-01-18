@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using YouTube's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using YouTube's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using YouTube's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display videos from YouTube.</p>
+            
+            <p>You can use the external option to load data from YouTube.</p>
+            
+            <h4>YouTube parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "youtube" when you want to load content from YouTube.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "user", "playlist", or "search".
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>username</td>
+                        <td>String</td>
+                        <td>YouTube user id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>playlist_id</td>
+                        <td>String</td>
+                        <td>The Playlist id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>search_term</td>
+                        <td>String</td>
+                        <td>Search query.</td>
+                    </tr>
+                                                                                
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                <p>Examples:</p>
+                
+                <p>Retrieve all of a user's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "youtube",
+    source: "user",
+    username: "youtube_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve playlist videos:</p>
+                
+                <pre>
+external: {
+    data: "youtube",
+    source: "playlist",
+    playlist_id: "youtube_playlist_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve videos based on the search term:</p>
+                
+                <pre>
+external: {
+    data: "youtube",
+    source: "search",
+    search_term: "search_query"
+    }                             
+                </pre>
+                                            
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

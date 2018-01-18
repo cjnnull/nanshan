@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Flickr's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Flickr's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Flickr's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display images from Yahoo's Flickr.</p>
+            
+            <p>You can use the external option to load data from Flickr.</p>
+            
+            <h4>Flickr parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "flickr" when you want to load content from Flickr.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "user", "favorites", "gallery", "photoset", or "group".
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>api_key</td>
+                        <td>String</td>
+                        <td>The Flickr API application key. <a target="_blank" href="http://www.flickr.com/services/api/misc.api_keys.html">See here</a> 
+                        for more details.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>user_id</td>
+                        <td>String</td>
+                        <td>This is your Flickr ID, not username. Check here for yours <a target="_blank" href="http://idgettr.com/">idGettr</a></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>tags</td>
+                        <td>String</td>
+                        <td>A comma-delimited list of tags.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>tag_mode</td>
+                        <td>String</td>
+                        <td>Possible values: "any" or "all"</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>gallery_id</td>
+                        <td>String</td>
+                        <td>Gallery id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>photoset_id</td>
+                        <td>String</td>
+                        <td>Photoset id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>group_id</td>
+                        <td>String</td>
+                        <td>This is a Group ID, not group name. Check here for yours <a target="_blank" href="http://idgettr.com/">idGettr</a></td>
+                    </tr>
+                                                                                                    
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                                
+                <p>Examples:</p>
+                
+                <p>Retrieve all of a user's recent photos:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "user",
+    user_id: "flickr_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve user photos by tags:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "user",
+    user_id: "flickr_user_id",
+    tags: "tag1,tag2,...",
+    tag_mode: "any"
+    }                             
+                </pre>
+                
+                <p>Retrieve user favorite photos:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "favorites",
+    user_id: "flickr_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve gallery photos:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "gallery",
+    gallery_id: "flickr_gallery_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve photoset photos:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "photoset",
+    photoset_id: "flickr_photoset_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve group photos:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "group",
+    group_id: "flickr_group_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve group photos by tag:</p>
+                
+                <pre>
+external: {
+    data: "flickr",
+    api_key: "flickr_api_key",
+    source: "group",
+    group_id: "flickr_group_id",
+    tags: "tag"
+    }                             
+                </pre>
+                
+                
+                                  
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

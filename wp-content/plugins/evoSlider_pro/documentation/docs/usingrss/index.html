@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using RSS</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using RSS</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using RSS</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display contents from RSS feed.</p>
+            
+            <p>You can use the external option to load content from a RSS feed.</p>
+            
+            <h4>RSS parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "rss" when you want to load content from a RSS feed.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>url</td>
+                        <td>String</td>
+                        <td>The URL address of a RSS feed.</td>
+                    </tr>
+                                                                                                   
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                <p>Example:</p>
+                
+                <p>Retrieve content from the Envato Note's RSS:</p>
+                
+                <pre>
+external: {
+    data: "rss",
+    url: "myRSS.xml"
+    }                             
+                </pre>
+                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Creating a Skin</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Creating a Skin</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Creating a Skin</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+        
+            <div class="longdesc">
+                <p>A good way to start creating your own custom skin is to have a look at the default skin in 
+                the Evo Slider package and see how it&#39;s done.</p>
+                
+                <h4>CSS Files and Structure</h4>
+                
+                <p>The &#39;<b>default.css</b>&#39; is structured, there are labels to help you find the section you need to modify. 
+                The file is divided in 7 sections:</p>
+                
+                <ol>
+                    <li><b>SLIDER</b>: this section is one of the most importants, it defines the main structure of the slider.</li>
+                    <li><b>TOGGLE ICON</b>: this part contains all stylings for the toggle icon of the accordion mode. </li>
+                    <li><b>DIRECTION NAVIGATION</b>: this part contains all stylings for the directional/arrows control.</li>
+                    <li><b>CONTROL NAVIGATION</b>: this part contains all stylings for the control navigation (bullets, thumbnails, and 
+                    rotator list).</li>
+                    <li><b>PLAY/PAUSE BUTTON</b>: this part contains all stylings for the play/pause button.</li>
+                    <li><b>CONTENT</b>: this part contains all stylings for the media container (images, videos, and embed object).</li>
+                    <li><b>TEXT DESCRIPTION</b>: this part contains all stylings for the inner and outer text description.</li>
+                </ol>
+                
+                <h4>Creating a skin</h4>
+                
+                <p>To create a new skin instead of modifying the default one, follow these steps:</p>
+                
+                <ol>
+                    <li>Locate the default skins folder that came with your download, it&#39;s named &#39;<b>default</b>&#39; and is 
+                    located inside the css folder. Duplicate the folder and rename the copy, giving it 
+                    whatever name you wish, for the purpose of this tutorial name it &#39;<b>newSkin</b>&#39;.</li>
+                    <li>Inside the newSkin folder, locate the &#39;<b>default.css</b>&#39; file, rename it &#39;<b>newSkin.css</b>&#39;.</li>
+                    <li>Open the &#39;<b>newSkin.css</b>&#39; file. Replace every class prefix &#39;<b>.default</b>&#39; 
+                    with &#39;<b>.newSkin</b>&#39;. So for example the selector for the Evo Slider should be changed from
+                        <br /><br />
+                        <pre>
+.evoslider.default {
+                        </pre>
+                        
+                        to
+                        <br /><br />
+                        <pre>
+.evoslider.newSkin {
+                        </pre>
+                        
+                        Once you've changed every selector save the file.
+                    </li>
+                    <li>Edit the newly created CSS files to style your new skin.</li>
+                </ol>
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

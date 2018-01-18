@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using skins</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using skins</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using skins</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+        
+            <div class="longdesc">
+                <h4>Downloading and Organizing</h4>
+                
+                <p>Using an Evo Slider skin is very easy. We recommend you to put all your skins in one directory called <b>css</b>. 
+                When downloading new skins, just add them to your existing skins directory for easy access. 
+                Here is an example of how your structure could look like:</p>
+                
+                <pre>
+/evoslider
+    /css
+        /default
+            /default.css
+        /newSkin
+            /newSkin.css
+                </pre>
+                
+                <p>Please note that there are no restrictions placed on where and how you organize your files, 
+                this is just an example to simplify the documentation.</p>
+                
+                <h4>Loading a Skin</h4>
+                
+                <p>You can load a skin by  manually adding a link tag that points to a skin, like so:</p>
+                
+                <pre>
+&lt;link rel="Stylesheet" type="text/css" href="evoslider/css/default/default.css" /&gt;
+                </pre>
+                
+                <p>Don&#39;t forget to add the skin class into the Evo Slider&#39;s <b>&lt;div&gt;</b> element, for example applying 
+                the default skin:</p>
+                
+                <pre>
+&lt;div id="mySlider" class="evoslider default"&gt;       
+    &lt;dl&gt;
+    
+	    &lt;dt&gt;slide one&lt;/dt&gt;
+	    &lt;dd data-src="image1.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide two&lt;/dt&gt;
+	    &lt;dd data-src="image2.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide three&lt;/dt&gt;
+	    &lt;dd data-src="image3.jpg"&gt;
+	    &lt;/dd&gt;
+	
+	    &lt;dt&gt;slide four&lt;/dt&gt;
+	    &lt;dd data-src="image4.jpg"&gt;
+	    &lt;/dd&gt;  
+    
+    &lt;/dl&gt;
+&lt;/div&gt; 
+                </pre>
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

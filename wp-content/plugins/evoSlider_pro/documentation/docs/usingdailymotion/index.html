@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Dailymotion's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Dailymotion's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Dailymotion's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display videos from Dailymotion.</p>
+            
+            <p>You can use the external option to load data from Dailymotion.</p>
+            
+            <h4>Dailymotion parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "dailymotion" when you want to load content from Dailymotion.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "videos", "favorites", "features", "subscriptions", "playlist", "contest", 
+                            "channel", or "group".
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>user_id</td>
+                        <td>String</td>
+                        <td>Dailymotion user id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>group_id</td>
+                        <td>String</td>
+                        <td>Dailymotion group id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>channel_id</td>
+                        <td>String</td>
+                        <td>Dailymotion channel id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>contest_id</td>
+                        <td>String</td>
+                        <td>Dailymotion contest id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>playlist_id</td>
+                        <td>String</td>
+                        <td>Dailymotion playlist id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                <p>Examples:</p>
+                
+                <p>Retrieve all of a user's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "videos",
+    user_id: "dailymotion_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a user's favorite videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "favorites",
+    user_id: "dailymotion_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a user's feature videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "features",
+    user_id: "dailymotion_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a user's subscription videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "subscriptions",
+    user_id: "dailymotion_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a group's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "group",
+    group_id: "dailymotion_group_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a channel's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "channel",
+    channel_id: "dailymotion_channel_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a contest's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "contest",
+    contest_id: "dailymotion_contest_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a playlist's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "dailymotion",
+    source: "playlist",
+    playlist_id: "dailymotion_playlist_id"
+    }                             
+                </pre>
+                                
+                
+            </div> <!-- end longdesc -->
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>

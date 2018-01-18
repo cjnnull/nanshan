@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+<title>Using Vimeo's Service</title>
+</head>
+
+<body>
+
+<div class="entry-content">
+    <div class="entry-title roundTop">
+          
+          <h1 class="jq-clearfix">Using Vimeo's Service</h1>
+
+    </div>
+    
+    <div id="add1" class="entry method">
+        <h2 class="jq-clearfix roundTop section-title">
+            <span class="name">Using Vimeo's Service</span> 
+        </h2>
+
+        <div class="jq-box roundBottom entry-details">
+            
+            <div class="longdesc">
+            
+            <p>The Evo Slider plugin allows you to display videos from Vimeo.</p>
+            
+            <p>You can use the external option to load data from Vimeo.</p>
+            
+            <h4>Vimeo parameters:</h4>
+            
+            <table border="1" cellspacing="10" style="margin-bottom: 40px;padding: 10px; border-style: solid; border-width: 1px;" cellpadding="5" width="100%" align="left">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>data</td>
+                        <td>String</td>
+                        <td>Set to "vimeo" when you want to load content from Vimeo.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>source</td>
+                        <td>String</td>
+                        <td>Possible values are: "videos", "likes", "appears_in", "all_videos", "subscriptions", 
+                            "group", "channel", or "album".
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>username</td>
+                        <td>String</td>
+                        <td>Vimeo user id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>groupname</td>
+                        <td>String</td>
+                        <td>The Vimeo group id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>channelname</td>
+                        <td>String</td>
+                        <td>The Vimeo channel id.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>album_id</td>
+                        <td>String</td>
+                        <td>The Vimeo album id.</td>
+                    </tr>
+                                                            
+                    <tr>
+                        <td>title_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the title.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>desc_length</td>
+                        <td>Number</td>
+                        <td>Set the number of characters in the text description.</td>
+                    </tr>
+    
+                </table>
+                
+                <p>Examples:</p>
+                
+                <p>Retrieve all of a user's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "videos",
+    username: "vimeo_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve videos a user likes:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "likes",
+    username: "vimeo_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve videos that the user appears in:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "appears_in",
+    username: "vimeo_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve videos that the user appears in and created:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "all_videos",
+    username: "vimeo_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve videos the user is subscribed to:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "subscriptions",
+    username: "vimeo_user_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a group's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "group",
+    groupname: "vimeo_group_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of a channel's recent videos:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "channel",
+    channelname: "vimeo_channel_id"
+    }                             
+                </pre>
+                
+                <p>Retrieve all of an album videos:</p>
+                
+                <pre>
+external: {
+    data: "vimeo",
+    source: "album",
+    album_id: "vimeo_album_id"
+    }                             
+                </pre>
+                                                                              
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body></html>
